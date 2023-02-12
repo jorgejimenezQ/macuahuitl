@@ -1,0 +1,28 @@
+// This file contains the styles for links.
+// Link, Visited, Hover, Focus, Active states are defined here.
+
+// Links are styled with a color and a bottom border. The border is used to indicate the current page. The border is removed on hover and focus.
+
+@use '../abstracts/variables/' as *;
+
+a {
+  &:link {
+    color: $color-link-primary;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $color-link-secondary;
+    text-decoration-color: $color-link-secondary;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $color-link-tertiary;
+  }
+}

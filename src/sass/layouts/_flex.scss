@@ -1,0 +1,29 @@
+/* All the flexbox stuff goes here*/
+@use '../abstracts/' as *;
+
+// A box that is used to contain other elements. It has padding and a margin
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.center-vertically {
+  align-items: center;
+}
+
+.center-vertically {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}

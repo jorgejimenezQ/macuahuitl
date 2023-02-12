@@ -1,0 +1,5 @@
+@use '../../abstracts/mixins/button' as *;
+
+.button {
+  @include createButton();
+}

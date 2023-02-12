@@ -1,0 +1,9 @@
+{
+  "name": "macuahuitl",
+  "version": "1.0.0",
+  "description": "A robust CSS framework designed to streamline and simplify the process of building high-quality websites, enabling developers to achieve faster and more efficient results.",
+  "main": "index.js",
+  "repository": "https://github.com/jorgejimenezQ/macuahuitl",
+  "author": "jorgejimenezQ <jorgejimenez@mail.weber.edu>",
+  "license": "MIT"
+}

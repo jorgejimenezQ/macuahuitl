@@ -1,0 +1,19 @@
+button.btn-dropdown {
+  // reset default button styles
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+
+  cursor: pointer;
+
+  // remove default button focus styles
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,35 @@
+@use '../variables' as *;
+// A box that is used to contain other elements. It has padding and a margin
+@mixin flex($justify: $flex-justify, $align: $flex-align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  //   @media (max-width: $breakpoint-mobile) {
+  //     flex-direction: column;
+  //   }
+}
+
+// A box that is centered horizontally and vertically
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// A box that is centered horizontally
+@mixin flex-center-x {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// A box that is centered vertically
+@mixin flex-center-y {
+  display: flex;
+  align-items: center;
+}

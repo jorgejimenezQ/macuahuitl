@@ -1,0 +1,7 @@
+@use '../../abstracts/variables/colors' as *;
+@use '../../abstracts/variables/typography' as *;
+body {
+  background-color: $black;
+  color: map-get($slate, 50);
+  font-family: $Monse;
+}

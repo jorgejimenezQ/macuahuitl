@@ -1,0 +1,149 @@
+@use '../../abstracts/' as *;
+
+section.projects {
+  max-width: $size-640px;
+  margin: auto;
+  line-height: $size-6;
+
+  h2 {
+    font-family: $Shadow;
+    text-align: center;
+
+    &.project-name {
+      font-family: $Monse;
+      font-weight: $font-w-thin;
+      text-align: start;
+      font-size: $size-8;
+    }
+  }
+
+  h3 {
+    font-family: $Monse;
+    font-weight: $font-w-normal;
+    text-align: center;
+    margin-bottom: $size-16;
+  }
+
+  p {
+    margin-bottom: $size-8;
+    font-family: $Monse;
+    font-weight: $font-w-medium;
+  }
+
+  .project {
+    margin-bottom: $size-4;
+    img {
+      max-width: 100%;
+      margin-bottom: $size-2;
+      object-position: center;
+      object-fit: cover;
+      position: relative;
+      opacity: 1;
+    }
+
+    .project-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: $size-8;
+        .technologies {
+          display: flex;
+          align-items: center;
+          font-size: $size-6;
+          align-self: flex-start;
+          padding-right: $size-4;
+          .technology {
+            margin-right: $size-2;
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: fit-content;
+        margin-top: $size-3;
+
+        a {
+          margin-left: $size-5;
+        }
+      }
+    }
+  }
+  hr {
+    margin-bottom: $size-8;
+    opacity: 0.3;
+    margin: $size-8 0 $size-16 0;
+  }
+}
+
+@include breakpoint($size-590px) {
+  section.projects {
+    .project {
+      .project-description {
+        .top {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint($bp-3) {
+  section.projects {
+    max-width: $size-1200px;
+    hr {
+      visibility: hidden;
+    }
+    .project {
+      display: flex;
+      margin-bottom: $size-16;
+
+      .project-description {
+        .top {
+          flex-direction: column;
+          .technologies {
+            border-right: none;
+            padding-right: 0;
+            margin-top: $size-2;
+            align-self: flex-start;
+          }
+        }
+        .bottom {
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+      img {
+        max-width: 60%;
+
+        //   start the image at the top left
+        aspect-ratio: 2.2;
+        object-position: top;
+        object-fit: cover;
+
+        position: relative;
+        opacity: 1;
+      }
+      .project-description {
+        flex: 1;
+        // padding: $size-4;
+        margin-left: $size-8;
+      }
+    }
+  }
+  .project-list div.project:nth-child(odd) {
+    flex-direction: row-reverse;
+    .project-description {
+      margin-left: 0;
+      margin-right: $size-8;
+    }
+  }
+}

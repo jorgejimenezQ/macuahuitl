@@ -1,0 +1,24 @@
+// border radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// border width
+@mixin border-width($width) {
+  border-width: $width;
+}
+
+// border style
+@mixin border-style($style) {
+  border-style: $style;
+}
+
+// border color
+@mixin border-color($color) {
+  border-color: $color;
+}
+
+// Box shadow
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}

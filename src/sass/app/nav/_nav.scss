@@ -1,0 +1,115 @@
+@use '../../abstracts/' as *;
+@use '../../layouts/' as *;
+@use '../../layouts/wrapper' as *;
+@use '../../base/' as *;
+
+// App variables
+@use '../variables/index' as *;
+
+// px to rem: 60px = 3.75rem
+$ulMargin: 3.75rem;
+
+nav {
+  @include padding-horizontal($size-4);
+  position: relative;
+  font-size: $size-6;
+  flex-wrap: wrap;
+  margin-bottom: $size-12 !important;
+  .brand {
+    font-family: $Shadow;
+  }
+
+  .nav-links {
+    font-family: $Monse;
+    font-size: $font-sm;
+    font-weight: $font-w-thin;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    ul {
+      // position: absolute;
+
+      &#dropdown {
+        // display: none;
+        visibility: hidden;
+        height: 0;
+      }
+
+      &#dropdown[data-show='true'] {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-bottom: solid 1px map-get($slate, 100);
+      }
+
+      // animate the dropdown menu when it is shown or hidden using the data-show attribute on the dropdown element
+      &[data-show='true'] {
+        animation: $dropdown-show;
+      }
+
+      &[data-show='false'] {
+        animation: $dropdown-hide;
+      }
+
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a {
+          display: block;
+          padding: $size-2 $size-4;
+          color: map-get($slate, 100);
+          text-decoration: none;
+          // &:hover {
+          //   background-color: map-get($slate, 100);
+          //   color: map-get($slate, 50);
+          // }
+        }
+      }
+    } // end ul
+
+    // Don't show the btn-dropdown on desktop
+  } // end .nav-links
+} // end nav
+
+////////////////////////////
+/// NAV LINKS RESPONSIVE ///
+/// ////////////////////////
+
+@include breakpoint($bp-2) {
+  nav {
+    display: none;
+    .nav-links {
+      align-items: center;
+      flex-basis: content;
+      padding: 10px;
+
+      // make bold and bigger on hover
+      a {
+        &:hover {
+          font-weight: $font-w-bold;
+          font-size: $font-lg;
+        }
+      } // end a
+
+      ul#dropdown {
+        display: flex;
+        justify-content: end;
+        height: fit-content;
+        visibility: visible;
+        flex-direction: row;
+      }
+    } // end .nav-links
+
+    button {
+      &.btn-dropdown {
+        display: none !important;
+      }
+    }
+  } // end nav
+}

@@ -1,0 +1,72 @@
+@use '../variables/button' as *;
+@mixin createButton(
+  $color: $button-color,
+  $background-color: $button-background-color,
+  $border-color: $button-border-color,
+  $border-width: $button-border-width,
+  $border-style: $button-border-style,
+  $border-radius: $button-border-radius,
+  $padding: $button-padding,
+  $margin: $button-margin,
+  $font-size: $button-font-size,
+  $font-weight: $button-font-weight,
+  $hover-color: $button-hover-color,
+  $hover-background-color: $button-hover-background-color,
+  $active-color: $button-active-color,
+  $active-background-color: $button-active-background-color,
+  $focus-color: $button-focus-color,
+  $focus-background-color: $button-focus-background-color,
+  $disabled-color: $button-disabled-color,
+  $disabled-background-color: $button-disabled-background-color,
+  $disabled-cursor: $button-disabled-cursor,
+  $disabled-opacity: $button-disabled-opacity,
+  $disabled-box-shadow: $button-disabled-box-shadow,
+  $disabled-border-style: $button-disabled-border-style,
+  $disabled-border-color: $button-disabled-border-color,
+  $disabled-border-width: $button-disabled-border-width,
+  $disabled-border-radius: $button-disabled-border-radius,
+  $disabled-text-decoration: $button-disabled-text-decoration,
+  $disabled-transition: $button-disabled-transition,
+  $disabled-outline: $button-disabled-outline,
+  $all-caps: true
+) {
+  @if $all-caps {
+    text-transform: uppercase;
+  }
+  font-size: $font-size;
+  font-weight: $font-weight;
+  border-radius: $border-radius;
+  border-width: $border-width;
+  border-style: $border-style;
+  border-color: $border-color;
+  padding: $padding;
+  margin: $margin;
+  color: $color;
+  background-color: $background-color;
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-background-color;
+  }
+  &:active {
+    color: $active-color;
+    background-color: $active-background-color;
+  }
+  &:focus {
+    color: $focus-color;
+    background-color: $focus-background-color;
+  }
+  &:disabled {
+    color: $disabled-color;
+    background-color: $disabled-background-color;
+    cursor: $disabled-cursor;
+    opacity: $disabled-opacity;
+    box-shadow: $disabled-box-shadow;
+    border-style: $disabled-border-style;
+    border-color: $disabled-border-color;
+    border-width: $disabled-border-width;
+    border-radius: $disabled-border-radius;
+    text-decoration: $disabled-text-decoration;
+  }
+  transition: $disabled-transition;
+  outline: $disabled-outline;
+}

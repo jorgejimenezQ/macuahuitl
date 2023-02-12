@@ -1,0 +1,36 @@
+/////////////
+/// all variables for buttons
+///
+@import './colors';
+@import './sizes';
+@import './typography';
+
+// $button-font-family: $font-family;
+$button-font-size: $size-3;
+$button-font-weight: $font-w-bold;
+$button-border-radius: $size-5;
+$button-border-width: 0;
+$button-border-style: solid;
+$button-border-color: transparent;
+$button-padding: $size-2 $size-5;
+$button-margin: 0.5rem 0;
+$button-color: map-get($slate, 50);
+$button-background-color: map-get($slate, 500);
+$button-hover-color: map-get($slate, 500);
+$button-hover-background-color: map-get($slate, 100);
+$button-active-color: map-get($slate, 100);
+$button-active-background-color: map-get($slate, 100);
+$button-focus-color: map-get($slate, 100);
+$button-focus-background-color: map-get($slate, 100);
+$button-disabled-color: map-get($slate, 100);
+$button-disabled-background-color: map-get($slate, 100);
+$button-disabled-cursor: default;
+$button-disabled-opacity: 0.5;
+$button-disabled-box-shadow: none;
+$button-disabled-border-style: solid;
+$button-disabled-border-color: map-get($slate, 100);
+$button-disabled-border-width: 0.1rem;
+$button-disabled-border-radius: 0.5rem;
+$button-disabled-text-decoration: none;
+$button-disabled-transition: none;
+$button-disabled-outline: none;

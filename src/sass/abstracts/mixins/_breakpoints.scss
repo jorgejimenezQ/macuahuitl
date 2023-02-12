@@ -1,0 +1,13 @@
+////////////////////////
+/// Mixin for creating media queries
+////////////////////////
+///
+/// @param {String} $breakpoint - The breakpoint to use
+
+@use '../variables/breakpoints' as *;
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

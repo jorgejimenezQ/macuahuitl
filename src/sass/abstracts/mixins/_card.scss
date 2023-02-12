@@ -1,0 +1,37 @@
+// A card component creator. The card is a container for content. It can be used to display a product, a piece of content, a collection of related content, etc.
+@use '../variables' as *;
+@use './spacing' as *;
+@use './border' as *;
+@use './colors' as *;
+
+@mixin createCard(
+  $card-padding: $card-padding,
+  $card-border-radius: $card-border-radius,
+  $card-background-color: $card-background-color,
+  $card-border-color: $card-border-color,
+  $card-border-width: $card-border-width,
+  $card-border-style: $card-border-style,
+  $card-shadow: $card-shadow,
+  $card-max-width: $card-max-width,
+  $card-text-color: $card-text-color,
+  $card-header-color: $card-header-color,
+  $cart-text-line-height: $cart-text-line-height,
+  $card-header-font-family: $card-header-font-family
+) {
+  @include padding($card-padding);
+  @include border-radius($card-border-radius);
+  @include background-color($card-background-color);
+  @include border-color($card-border-color);
+  @include border-width($card-border-width);
+  @include border-style($card-border-style);
+  @include box-shadow($card-shadow);
+  max-width: $card-max-width;
+  color: $card-text-color;
+  h2 {
+    font-family: $card-header-font-family;
+    color: $card-header-color;
+  }
+  p {
+    line-height: $cart-text-line-height;
+  }
+}

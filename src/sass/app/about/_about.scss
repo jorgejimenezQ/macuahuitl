@@ -1,0 +1,60 @@
+@use '../../abstracts/' as *;
+
+section.about-me {
+  max-width: $size-640px;
+  margin: auto;
+  line-height: $size-6;
+
+  h2 {
+    font-family: $Shadow;
+  }
+  div {
+    p {
+      margin-bottom: $size-2;
+    }
+  }
+
+  * {
+    text-align: center;
+  }
+}
+
+section.contact {
+  text-align: center;
+  font-size: $size-6;
+
+  p,
+  h2,
+  .social-media {
+    max-width: $size-640px;
+    margin: 0 auto;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $size-2;
+    a {
+      color: map-get($slate, 400);
+      text-decoration: none;
+      font-size: $size-10;
+      margin: $size-6;
+      &:hover {
+        color: map-get($slate, 500);
+      }
+    }
+  }
+}
+
+@include breakpoint($size-640px) {
+  section.about-me {
+    display: flex;
+    h2 {
+      width: 100%;
+    }
+    * {
+      text-align: left;
+    }
+  }
+}

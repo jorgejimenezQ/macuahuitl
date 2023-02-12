@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+@use './flex' as *;
+
+// Note the wrapper has margin 0 by default.
+
+// Wraps the children elements in a flex container with padding.
+.wrapper {
+  @include make-wrapper;
+  // @include flex;
+}

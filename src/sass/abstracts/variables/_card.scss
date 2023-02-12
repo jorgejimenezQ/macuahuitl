@@ -1,0 +1,16 @@
+@import './sizes';
+
+// Default values for card component
+$card-padding: $size-8 !default;
+$card-margin: $size-4 !default;
+$card-border-radius: $size-5 !default;
+$card-background-color: map-get($slate, 50) !default;
+$card-border-color: map-get($slate, 100) !default;
+$card-border-width: $size-1 !default;
+$card-border-style: solid !default;
+$card-shadow: none !default;
+$card-max-width: $size-640px !default;
+$card-text-color: map-get($slate, 900) !default;
+$card-header-color: map-get($slate, 700) !default;
+$cart-text-line-height: $size-6 !default;
+$card-header-font-family: $Shadow !default;

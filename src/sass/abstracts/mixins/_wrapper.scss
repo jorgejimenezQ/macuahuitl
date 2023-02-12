@@ -1,0 +1,7 @@
+// Mixins for the wrapper component
+@use '../variables/' as *;
+
+@mixin make-wrapper($padding: $wrapper-padding, $margin: $wrapper-margin) {
+  padding: $padding;
+  margin: $margin;
+}

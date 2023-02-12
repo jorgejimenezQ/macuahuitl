@@ -1,0 +1,30 @@
+@import '../../abstracts/mixins/card';
+@import '../../abstracts/variables';
+
+.card {
+  @include createCard();
+  margin: auto;
+  margin-bottom: $size-16;
+  h1 {
+    padding-bottom: $size-4;
+  }
+  p {
+    padding-bottom: $size-4;
+    // line-height: $size-6;
+  }
+
+  a {
+    color: map-get($slate, 500);
+    text-decoration: none;
+    &:hover {
+      color: map-get($slate, 700);
+    }
+  }
+  .social-links {
+    font-size: $size-8;
+    a {
+      margin-left: $size-4;
+      margin-right: $size-4;
+    }
+  }
+}
