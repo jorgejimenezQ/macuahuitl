@@ -21,7 +21,7 @@ npm install macuahuitl
 ```
 
 ```scss
-@import 'node_modules/macuahuitl/src/macuahuitl';
+@import 'node_modules/macuahuitl/src/sass/style.scss';
 ```
 
 You can then start using the variables, mixins, and functions provided by Macuahuitl in your own Sass code.

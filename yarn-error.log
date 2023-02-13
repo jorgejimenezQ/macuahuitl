@@ -1,0 +1,45 @@
+Arguments: 
+  /Users/jorgejimenez/.nvm/versions/node/v18.12.1/bin/node /Users/jorgejimenez/.nvm/versions/node/v18.12.1/bin/yarn publish
+
+PATH: 
+  /Users/jorgejimenez/.pub-cache/bin:/Users/jorgejimenez/Library/Android/sdk/emulator:/usr/local/lib/ruby/gems/3.2.0/bin:/usr/local/opt/ruby/bin:/usr/local/opt/libpq/bin:/usr/local/opt/libp/usr/local/opt/libpq/bin:/usr/local/opt/libpq/bin:/Users/jorgejimenez/.nvm/versions/node/v18.12.1/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/jorgejimenez/.pub-cache/bin:/Users/jorgejimenez/Library/Android/sdk/emulator:/usr/local/lib/ruby/gems/3.2.0/bin:/usr/local/opt/ruby/bin:/usr/local/opt/libpq/bin:/usr/local/opt/libp/usr/local/opt/libpq/bin:/Users/jorgejimenez/.nvm/versions/node/v18.12.1/bin:/Users/jorgejimenez/Flutter_dev/flutter/bin:/Users/jorgejimenez/Library/Android/sdk/cmdline-tools/latest /bin:/Users/jorgejimenez/Flutter_dev/flutter/bin:/Users/jorgejimenez/Library/Android/sdk/cmdline-tools/latest
+  /bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:tecoch_code: That email has already been registered.
+      at params.callback [as _callback] (/Users/jorgejimenez/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/Users/jorgejimenez/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/Users/jorgejimenez/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/Users/jorgejimenez/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "macuahuitl",
+    "version": "1.0.0",
+    "description": "A robust CSS framework designed to streamline and simplify the process of building high-quality websites, enabling developers to achieve faster and more efficient results.",
+    "main": "index.js",
+    "repository": "https://github.com/jorgejimenezQ/macuahuitl",
+    "author": "jorgejimenezQ <jimenezjorge717@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
